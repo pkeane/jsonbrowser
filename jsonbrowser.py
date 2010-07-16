@@ -14,6 +14,7 @@ jsondata = """
 "open library doc":"http://openlibrary.org/works/OL15168504W.json",
 "dase collections":"http://dasebeta.laits.utexas.edu/collections.json",
 "picasa web jsonc":"http://picasaweb.google.com/data/feed/api/user/pjkeane/albumid/5453894135857174993?alt=jsonc",
+"freebase query":"http://www.freebase.com/api/service/search?query=perl&xx=json",
 "todo lists":
     { 
     "home":["buy milk","paint house","mow the lawn"],
@@ -184,7 +185,7 @@ class Application():
                             cnode = Node(n,n['title'],pnode)
                             self.text.insert(INSERT,n['title'], self.hyperlink.add(self.click,cnode))
                         elif n.has_key('id'):
-                            cnode = Node(n,n['title'],pnode)
+                            cnode = Node(n,n['id'],pnode)
                             self.text.insert(INSERT,n['id'], self.hyperlink.add(self.click,cnode))
                         else:
                             self.text.insert(INSERT,"item "+str(i), self.hyperlink.add(self.click,cnode))
