@@ -1,12 +1,12 @@
-JSONBrowser is a rudimentary implementation of a browser for linked JSON
-data. It is not very useful in itself (just a proof of concept), but may
-provide food for thought about what a more sophisticated JSON browser
-may do.  The idea here is more akin to a Feed Reader (for RSS/Atom) than
-a full-fledged HTML-based web browser.  That said, support for images,
-audio, and video would be useful.
+JSONBrowser is a rudimentary implementation of a browser for linked
+JSON data. It is not very useful in itself (just a proof of concept),
+but may provide food for thought about what a more sophisticated JSON
+browser may do.  The idea here is more akin to a Gopher client or a
+Feed Reader than a full-fledged HTML-based web browser.  That said,
+support for images, audio, and video would be useful.
 
 While this is written in Python/Tk, a more useful version could be written
 for mobile platforms such as Android or iPhone.  The advantage it gives
-over an HTML browser is that it is much lighterweight.  Also, it's geared
+over an HTML browser is that it is much lighter-weight.  Also, it's geared
 towards more of a data-centric (rather than text-centric) experience.
 
