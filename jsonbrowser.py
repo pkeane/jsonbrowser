@@ -213,6 +213,12 @@ if __name__ == "__main__":
     root = Tk()
     root.title("jsonbrowse")
     root.geometry("%dx%d%+d%+d" % (600, 400, 40, 40))
+    if len(sys.argv) > 1:
+        try:
+            fn = open(sys.argv[1])
+            jsondata = fn.read()
+        except:
+            pass
     node = Node(json.loads(jsondata),"HOME")
     app = Application(root,node)
     root.mainloop() 
